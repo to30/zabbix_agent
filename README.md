@@ -9,5 +9,8 @@ zabbix-agentを導入してサーバ監視を自働化する
   Hostnameではsystem.hostnameが使えないので配布時にホスト名を書き込む必要がある
   自動化を考えるとHostnameItem一択だが、
   アクティブチェックを使用する際はHostnameの方を使わなければならないかもしれない
+  課題結果：アクティブチェックを使用する際はHostnameの方を使わなければいけないということはなく、
+  HostnameItemで問題なく利用できた。但しログ監視を行う際はroot権限で実行できるよう
+  AllowRoot=1の設定が必要
 
 
